@@ -31,18 +31,22 @@ namespace CondominiosUCAB
             {
                 con.ConnectionString = serverInfo;
                 con.Open();
-
+                openClose = true;
                 //query = "SELECT * FROM propietarios"; //hacer mejor en la bases de datos
-               // NpgsqlDataAdapter add = new NpgsqlDataAdapter(query, con);
-               // add.Fill(data);
+                // NpgsqlDataAdapter add = new NpgsqlDataAdapter(query, con);
+                // add.Fill(data);
                 con.Close();
+                openClose = false;
                 //query = "";
 
                 return "si se logro conexion";
             }
             catch
             {
-              return "no se logro conexion";
+                if (openClose) con.Close();
+                openClose = false;
+                return "no se logro conexion";
+                
             }       
         }
 
@@ -89,6 +93,24 @@ namespace CondominiosUCAB
                 openClose = true;
                 NpgsqlCommand command = new NpgsqlCommand(query, con);
                 command.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                System.Console.Out.WriteLine("Error Update: " + e.Message);
+                if (openClose) con.Close();
+                openClose = false;
+            }
+        }
+
+        public void consult(string query)
+        {
+            try
+            {
+                con.Open();
+                openClose = true;
+                NpgsqlDataAdapter add = new NpgsqlDataAdapter(query, con);
+                add.Fill(data);
                 con.Close();
             }
             catch (Exception e)
