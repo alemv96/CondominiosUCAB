@@ -18,10 +18,7 @@ namespace CondominiosUCAB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            CondominiumData data = new CondominiumData();
-            string message = data.Data_Connect();
-            //conexion a postgres
+            Application.Run(new Form1());           
         }
     }
 }
