@@ -13,7 +13,7 @@ namespace CondominiosUCAB
     {
         private string query, serverInfo;
         private bool openClose;
-        private DataSet data = new DataSet();
+        private DataSet data;
         private NpgsqlConnection con = new NpgsqlConnection();
 
         public CondominiumData()
@@ -24,6 +24,8 @@ namespace CondominiosUCAB
             this.con = new NpgsqlConnection();
             this.openClose = false;
         }
+
+        public DataSet get_Data(){return data;}
 
         public string Data_Connect()
         {
@@ -109,8 +111,8 @@ namespace CondominiosUCAB
             {
                 con.Open();
                 openClose = true;
-                NpgsqlDataAdapter add = new NpgsqlDataAdapter(query, con);
-                add.Fill(data);
+                NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(query, con);
+                adapter.Fill(data);
                 con.Close();
             }
             catch (Exception e)

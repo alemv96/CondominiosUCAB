@@ -43,5 +43,16 @@ namespace CondominiosUCAB
         {
             data.update("UPDATE propietario SET nombre = '" + data2.Text + "', necesidades = '" + data3.Text + "' WHERE idpropietario = " + data1.Text + ";");
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void consultD_Click(object sender, EventArgs e)
+        {
+            data.consult("SELECT * FROM propietario WHERE nombre = 'Alejandro'");
+            dataGridView1.DataSource = data.get_Data().Tables[0];
+        }
     }
 }
