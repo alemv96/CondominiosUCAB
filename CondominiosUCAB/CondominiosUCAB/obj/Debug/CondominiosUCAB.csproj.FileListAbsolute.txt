@@ -9,3 +9,15 @@ C:\Users\aleMV\documents\visual studio 2017\Projects\CondominiosUCAB\Condominios
 C:\Users\aleMV\documents\visual studio 2017\Projects\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.csproj.GenerateResource.Cache
 C:\Users\aleMV\documents\visual studio 2017\Projects\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.exe
 C:\Users\aleMV\documents\visual studio 2017\Projects\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.pdb
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\bin\Debug\CondominiosUCAB.exe.config
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.exe
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.pdb
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\bin\Debug\CondominiosUCAB.exe
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\bin\Debug\CondominiosUCAB.pdb
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\bin\Debug\Npgsql.dll
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\bin\Debug\Npgsql.xml
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.csprojResolveAssemblyReference.cache
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.Form1.resources
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.Properties.Resources.resources
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.csproj.GenerateResource.Cache
+C:\Users\Luna\Desktop\CondominiosUCAB-master\CondominiosUCAB\CondominiosUCAB\obj\Debug\CondominiosUCAB.Menu.resources

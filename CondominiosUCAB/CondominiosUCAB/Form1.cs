@@ -19,7 +19,7 @@ namespace CondominiosUCAB
             data = new CondominiumData();
             string message = data.Data_Connect();
             System.Console.Out.WriteLine(message);
-            //conexion a postgres          
+            //conexion a postgres
             InitializeComponent();
         }
 
