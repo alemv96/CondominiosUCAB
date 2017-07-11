@@ -53,6 +53,7 @@ namespace CONDOMINIO_UCAB
             //ajustes de posiciones
             panel_detalles.Location = new Point(X-217,panel_detalles.Location.Y);
             linea_detalles.Location = new Point(X - 220, linea_detalles.Location.Y);
+            agregar.Location = new Point(X-420, Y - 100);
 
 
         }

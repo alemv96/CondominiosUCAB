@@ -12,12 +12,16 @@ namespace CONDOMINIO_UCAB
 {
     public partial class editor : Form
     {
-        public editor()
+        public editor() // cosntructor bacio por defecto, solo para casos de prueba, no para implementar
         {
             InitializeComponent();
         }
-        public editor(int modo, int entidad) {
+        public editor(int modo, int entidad) { // constructor que se debe usar
             InitializeComponent();
+            this.CenterToScreen();
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = FormBorderStyle.None;
+     //       this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             if (modo == 1)  { //si modo es 1 se coloca en el titulo de la ventana que se va a agregar un objeto a la  entidad X
                barra_superior.Text = "Agregar nuevo ";
             }
@@ -29,8 +33,8 @@ namespace CONDOMINIO_UCAB
                 crearbloque("RIF", 1);   // el primer valor corresponde al titulo que llevara el campo a rellenar
                 crearbloque("lugar", 2); // el segundo valor corresponde a si sera un textbox o un combo lo que se utilizara
                 crearbloque("otra paja", 1); // 1 si es texbox, 2 si es cambobox
-                crearbloque("mas paja", 1);
-                crearbloque("mas paja x 2", 1);
+                crearbloque("mas paja", 1); // se debe llamar a "crear bloque" por cada atributo que se quiera manipular
+                crearbloque("mas paja x 2", 1);  
             
             }
 
@@ -74,6 +78,11 @@ namespace CONDOMINIO_UCAB
         private void editor_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void cancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

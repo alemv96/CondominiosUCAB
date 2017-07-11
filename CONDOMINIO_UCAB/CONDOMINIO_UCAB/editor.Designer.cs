@@ -87,6 +87,7 @@
             this.cancelar.TabIndex = 4;
             this.cancelar.Text = "CANCELAR";
             this.cancelar.UseVisualStyleBackColor = false;
+            this.cancelar.Click += new System.EventHandler(this.cancelar_Click);
             // 
             // editor
             // 

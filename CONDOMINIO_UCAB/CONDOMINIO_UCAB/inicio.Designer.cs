@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.barra_superior = new System.Windows.Forms.Label();
             this.menu = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,7 +58,7 @@
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_detalles = new System.Windows.Forms.Panel();
             this.linea_detalles = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.agregar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.informacion = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
@@ -314,23 +314,23 @@
             // 
             // ID
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID.DefaultCellStyle = dataGridViewCellStyle4;
             this.ID.HeaderText = "Cedula";
             this.ID.Name = "ID";
             this.ID.Width = 65;
             // 
             // nombrw
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 12F);
-            this.nombrw.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.nombrw.DefaultCellStyle = dataGridViewCellStyle5;
             this.nombrw.HeaderText = "Nombre";
             this.nombrw.Name = "nombrw";
             // 
             // apellido
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto", 12F);
-            this.apellido.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Roboto", 12F);
+            this.apellido.DefaultCellStyle = dataGridViewCellStyle6;
             this.apellido.HeaderText = "Apellido";
             this.apellido.Name = "apellido";
             // 
@@ -352,23 +352,23 @@
             this.linea_detalles.Size = new System.Drawing.Size(1, 750);
             this.linea_detalles.TabIndex = 5;
             // 
-            // button1
+            // agregar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(181)))), ((int)(((byte)(214)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Roboto", 11.25F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(917, 655);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 39);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "AGREGAR";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(181)))), ((int)(((byte)(214)))));
+            this.agregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.agregar.FlatAppearance.BorderSize = 0;
+            this.agregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(181)))), ((int)(((byte)(214)))));
+            this.agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agregar.Font = new System.Drawing.Font("Roboto", 11.25F);
+            this.agregar.ForeColor = System.Drawing.Color.White;
+            this.agregar.Location = new System.Drawing.Point(917, 655);
+            this.agregar.Name = "agregar";
+            this.agregar.Size = new System.Drawing.Size(110, 39);
+            this.agregar.TabIndex = 6;
+            this.agregar.Text = "AGREGAR";
+            this.agregar.UseVisualStyleBackColor = false;
+            this.agregar.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -394,7 +394,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1304, 706);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.agregar);
             this.Controls.Add(this.linea_detalles);
             this.Controls.Add(this.panel_detalles);
             this.Controls.Add(this.tabla);
@@ -453,7 +453,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombrw;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button agregar;
         private System.Windows.Forms.Label informacion;
         private System.Windows.Forms.Button button2;
     }
