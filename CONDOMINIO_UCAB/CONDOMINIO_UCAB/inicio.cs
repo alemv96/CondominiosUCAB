@@ -15,6 +15,8 @@ namespace CONDOMINIO_UCAB
     {
         string direccion = Path.Combine(Application.StartupPath, "");
         string direccionimagenes;
+   
+
         public inicio()
         {
             direccionimagenes = direccion.Replace("bin\\Debug", "Resources\\");
@@ -129,6 +131,13 @@ namespace CONDOMINIO_UCAB
         private void Form1_Resize(object sender, EventArgs e)
         {
             responsive();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            editor edi = new editor(1, 1); // revisar los comentarios en el constructor de este From
+            edi.ShowDialog();
+            // aqui se debe actualizar la tabla o lo que sea que este mostrando la info con respecto a la entidad que se modifico
         }
     }
 }

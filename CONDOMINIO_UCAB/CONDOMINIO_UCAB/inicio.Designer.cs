@@ -53,11 +53,14 @@
             this.icono6 = new System.Windows.Forms.Panel();
             this.linea_menu = new System.Windows.Forms.Label();
             this.tabla = new System.Windows.Forms.DataGridView();
-            this.panel_detalles = new System.Windows.Forms.Panel();
-            this.linea_detalles = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombrw = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel_detalles = new System.Windows.Forms.Panel();
+            this.linea_detalles = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.informacion = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -66,6 +69,7 @@
             this.panel12.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
+            this.panel_detalles.SuspendLayout();
             this.SuspendLayout();
             // 
             // barra_superior
@@ -308,22 +312,6 @@
             this.tabla.Size = new System.Drawing.Size(693, 420);
             this.tabla.TabIndex = 3;
             // 
-            // panel_detalles
-            // 
-            this.panel_detalles.BackColor = System.Drawing.Color.Transparent;
-            this.panel_detalles.Location = new System.Drawing.Point(1063, 42);
-            this.panel_detalles.Name = "panel_detalles";
-            this.panel_detalles.Size = new System.Drawing.Size(200, 637);
-            this.panel_detalles.TabIndex = 4;
-            // 
-            // linea_detalles
-            // 
-            this.linea_detalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
-            this.linea_detalles.Location = new System.Drawing.Point(1060, 42);
-            this.linea_detalles.Name = "linea_detalles";
-            this.linea_detalles.Size = new System.Drawing.Size(1, 750);
-            this.linea_detalles.TabIndex = 5;
-            // 
             // ID
             // 
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -346,12 +334,67 @@
             this.apellido.HeaderText = "Apellido";
             this.apellido.Name = "apellido";
             // 
+            // panel_detalles
+            // 
+            this.panel_detalles.BackColor = System.Drawing.Color.Transparent;
+            this.panel_detalles.Controls.Add(this.informacion);
+            this.panel_detalles.Controls.Add(this.button2);
+            this.panel_detalles.Location = new System.Drawing.Point(1063, 42);
+            this.panel_detalles.Name = "panel_detalles";
+            this.panel_detalles.Size = new System.Drawing.Size(200, 637);
+            this.panel_detalles.TabIndex = 4;
+            // 
+            // linea_detalles
+            // 
+            this.linea_detalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(158)))), ((int)(((byte)(158)))));
+            this.linea_detalles.Location = new System.Drawing.Point(1060, 42);
+            this.linea_detalles.Name = "linea_detalles";
+            this.linea_detalles.Size = new System.Drawing.Size(1, 750);
+            this.linea_detalles.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(181)))), ((int)(((byte)(214)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Roboto", 11.25F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(917, 655);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 39);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "AGREGAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(29, 16);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(139, 139);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // informacion
+            // 
+            this.informacion.AutoSize = true;
+            this.informacion.Location = new System.Drawing.Point(19, 176);
+            this.informacion.Name = "informacion";
+            this.informacion.Size = new System.Drawing.Size(35, 13);
+            this.informacion.TabIndex = 1;
+            this.informacion.Text = "label1";
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1304, 706);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.linea_detalles);
             this.Controls.Add(this.panel_detalles);
             this.Controls.Add(this.tabla);
@@ -375,6 +418,8 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
+            this.panel_detalles.ResumeLayout(false);
+            this.panel_detalles.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -408,6 +453,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombrw;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label informacion;
+        private System.Windows.Forms.Button button2;
     }
 }
 

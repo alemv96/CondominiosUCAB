@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="Base_De_Datos.cs" />
     <Compile Include="edificio.cs" />
+    <Compile Include="editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editor.Designer.cs">
+      <DependentUpon>editor.cs</DependentUpon>
+    </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="editor.resx">
+      <DependentUpon>editor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
     </EmbeddedResource>
